@@ -3,8 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Седона</title>
+  <title>Седона hotels</title>
 </head>
+
 <body>
   <div class="wrapper">
     <header>
@@ -21,8 +22,53 @@
       </nav>
     </header>
     <div class="filter">
-
+      <div class="infrastructure">
+        <form action="/ehco" method="post">
+          <p class="infrastructure-title">ИНФРАСТРУКТУРА:</p>
+          <input id="pool" type="checkbox" name="pool" checked value="pool">
+          <label for="pool">БАССЕЙН</label>
+          <br>
+          <input id="parking" type="checkbox" name="parking" value="parking">
+          <label for="pool">ПАРКОВКА</label>
+          <br>
+          <input id="Wi-Fi" type="checkbox" name="Wi-Fi" value="Wi-Fi">
+          <label for="Wi-Fi">Wi-Fi</label>
+        </form>
+      </div>
+      <div class="type-hous" <form action="/ehco" method="post">
+        <p class="type-hous-title">Тип жилья:</p>
+        <input id="hotel" type="checkbox" name="hotel" checked value="hotel">
+        <label for="pool">ГостиницА</label>
+        <br>
+        <input id="parking" type="checkbox" name="parking" value="parking">
+        <label for="pool">ПАРКОВКА</label>
+        <br>
+        <input id="Wi-Fi" type="checkbox" name="Wi-Fi" value="Wi-Fi">
+        <label for="Wi-Fi">Wi-Fi</label>
+        </form>
+      </div>
+      <div class="filter-cost">
+        <form action="/ehco" method="post">
+          <p class="filter-cost-title">Стоимость в сутки (Р):</p>
+          <div class="filter-cost-range">
+            <input type="text" value="ОТ 0">
+            <input type="text" value="ДО 3000">
+          </div>
+          <div class="scale">
+            <div class="scale-min"></div>
+            <div class="scale-max"></div>
+          </div>
+          <input class="filter-btn" type="submit" value="Показать">
+        </form>
+      </div>
     </div>
-  </div>
+    <div class="result">
+      <div class="heder-result">
+        <h2>Найдено: 3</h2>
+        <div class="sort">СОРТИРОВКА:</div>
+
+      </div>
+    </div>
 </body>
+
 </html>
