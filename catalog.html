@@ -3,53 +3,58 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Седона hotels</title>
+  <title>Седона</title>
 </head>
 
 <body>
   <div class="wrapper">
-    <header>
+    <header class="main-header">
       <nav class="main-navigation">
         <ul>
           <li><a href="#">ИНФОРМАЦИЯ</a></li>
           <li><a href="#">ФОТО И ВИДЕО</a></li>
-          <li class="logo">
-            <a href="#"><img src="#" alt="Logo"></a>
-          </li>
           <li><a href="#">КАРТА ШТАТА</a></li>
           <li><a href="#">ГОСТИНИЦЫ</a></li>
         </ul>
+        <div class="logo">
+          <a href="#"><img src="#" alt="Logo"></a>
+        </div>
       </nav>
     </header>
     <div class="filter">
-      <div class="infrastructure">
-        <form action="/ehco" method="post">
-          <p class="infrastructure-title">ИНФРАСТРУКТУРА:</p>
-          <input id="pool" type="checkbox" name="pool" checked value="pool">
-          <label for="pool">БАССЕЙН</label>
-          <br>
-          <input id="parking" type="checkbox" name="parking" value="parking">
-          <label for="pool">ПАРКОВКА</label>
-          <br>
-          <input id="Wi-Fi" type="checkbox" name="Wi-Fi" value="Wi-Fi">
-          <label for="Wi-Fi">Wi-Fi</label>
-        </form>
-      </div>
-      <div class="type-hous" <form action="/ehco" method="post">
-        <p class="type-hous-title">Тип жилья:</p>
-        <input id="hotel" type="checkbox" name="hotel" checked value="hotel">
-        <label for="pool">ГостиницА</label>
-        <br>
-        <input id="parking" type="checkbox" name="parking" value="parking">
-        <label for="pool">ПАРКОВКА</label>
-        <br>
-        <input id="Wi-Fi" type="checkbox" name="Wi-Fi" value="Wi-Fi">
-        <label for="Wi-Fi">Wi-Fi</label>
-        </form>
-      </div>
-      <div class="filter-cost">
-        <form action="/ehco" method="post">
-          <p class="filter-cost-title">Стоимость в сутки (Р):</p>
+      <form action="/ehco" method="post">
+        <div class="infrastructure">
+          <span class="filter-title">ИНФРАСТРУКТУРА:</span>
+          <div class="filter-item">
+            <input id="pool" type="checkbox" name="pool" checked value="pool">
+            <label for="pool">БАССЕЙН</label>
+          </div>
+          <div class="filter-item">
+            <input id="parking" type="checkbox" name="parking" value="parking">
+            <label for="parking">ПАРКОВКА</label>
+          </div>
+          <div class="filter-item">
+            <input id="Wi-Fi" type="checkbox" name="Wi-Fi" value="Wi-Fi">
+            <label for="Wi-Fi">Wi-Fi</label>
+          </div>
+        </div>
+        <div class="type-house">
+          <span class="filter-title">Тип жилья:</span>
+          <div class="filter-item">
+            <input id="hotel" type="checkbox" name="hotel" checked value="hotel">
+            <label for="pool">ГостиницА</label>
+          </div>
+          <div class="filter-item">
+            <input id="parking" type="checkbox" name="parking" value="parking">
+            <label for="pool">ПАРКОВКА</label>
+          </div>
+          <div class="filter-item">
+            <input id="Wi-Fi" type="checkbox" name="Wi-Fi" value="Wi-Fi">
+            <label for="Wi-Fi">Wi-Fi</label>
+          </div>
+        </div>
+        <div class="filter-cost">
+          <span class="filter-title">Стоимость в сутки (Р):</span>
           <div class="filter-cost-range">
             <input type="text" value="ОТ 0">
             <input type="text" value="ДО 3000">
@@ -59,83 +64,97 @@
             <div class="scale-max"></div>
           </div>
           <input class="filter-btn" type="submit" value="Показать">
-        </form>
-      </div>
+        </div>
+      </form>
     </div>
     <div class="result">
-      <div class="heder-result">
+      <div class="header-result">
         <h2>Найдено: 3</h2>
-        <div class="sort">СОРТИРОВКА:</div>
+        <span class="sort">СОРТИРОВКА:</sapn>
         <a class="sort-active" href="#">ПО ЦЕНЕ</a>
         <a href="#">ПО ТИПУ</a>
         <a href="#">ПО РЕЙТИНГУ</a>
-        <a class="sort-arrow-up" href="#"></a>
-        <a class="sort-arrow-down" href="#"></a>
+        <div class="sort-arrow">
+        <a class="sort-arrow-up" href="#"><img src="" alt="arrow-up" /></a>
+        <a class="sort-arrow-down" href="#"><img src="" alt="arrow-down" /></a>
+        </div>
       </div>
       <div class="result-content">
         <div class="photo-hotel">
           <a href="#"><img src="#" alt="photo-hotel" </a>
         </div>
         <h2>Amara Resort & Spa</h2>
-        <p class="type-house">Гостиница</p>
-        <p class="result-cost">ОТ 3500 Р.</p>
-        <a class="read-more" href="#">ПОДРОБНЕЕ</a>
-        <a class="reserve" href="#">ЗАБРОНИРОВАТЬ</a>
-        <div class="hotel-rating">
-          <img class="stars" src="#" />
-          <span class="rating">Рейтинг: 8,5</span>
-        </div>
+        <div class="info-house">
+          <span class="type-house">Гостиница</span>
+        <span class="result-cost">ОТ 3500 Р.</span>
       </div>
-      <div class="result-content">
-        <div class="photo-hotel">
-          <a href="#"><img src="#" alt="photo-hotel" </a>
-        </div>
-        <h2>Desert Quail Inn</h2>
-        <p class="type-house">Мотель</p>
-        <p class="result-cost">ОТ 2000 Р.</p>
+      <div class="additional-menu">
         <a class="read-more" href="#">ПОДРОБНЕЕ</a>
         <a class="reserve" href="#">ЗАБРОНИРОВАТЬ</a>
-        <div class="hotel-rating">
-          <img class="stars" src="#" />
-          <span class="rating">Рейтинг: 8,9</span>
-        </div>
       </div>
-      <div class="result-content">
-        <div class="photo-hotel">
-          <a href="#"><img src="#" alt="photo-hotel" </a>
-        </div>
-        <h2>Villas at Poco Diablo</h2>
-        <p class="type-house">Апартаменты</p>
-        <p class="result-cost">ОТ 4000 Р.</p>
-        <a class="read-more" href="#">ПОДРОБНЕЕ</a>
-        <a class="reserve" href="#">ЗАБРОНИРОВАТЬ</a>
-        <div class="hotel-rating">
-          <img class="stars" src="#" />
-          <span class="rating">Рейтинг: 9,2</span>
-        </div>
+      <div class="hotel-rating">
+        <img class="stars" src="#" />
+        <span class="rating">Рейтинг: 8,5</span>
       </div>
     </div>
-    <footer>
-      <div class="Hashtag">
-        <p>#visitSEDONA</p>
+    <div class="result-content">
+      <div class="photo-hotel">
+        <a href="#"><img src="#" alt="photo-hotel" </a>
       </div>
-      <div class="social-ico">
-        <ul>
-          <li>
-            <a href="tw-ico"></a>
-          </li>
-          <li>
-            <a href="fb-ico"></a>
-          </li>
-          <li>
-            <a href="ut-ico"></a>
-          </li>
-        </ul>
+      <h2>Desert Quail Inn</h2>
+      <div class="info-house">
+        <span class="type-house">Мотель</span>
+        <span class="result-cost">ОТ 2000 Р.</span>
       </div>
-      <div class="academy-lable">
-        <img src="#" alt="html academy">
+      <div class="additional-menu">
+        <a class="read-more" href="#">ПОДРОБНЕЕ</a>
+        <a class="reserve" href="#">ЗАБРОНИРОВАТЬ</a>
       </div>
-    </footer>
+      <div class="hotel-rating">
+        <img class="stars" src="#" />
+        <span class="rating">Рейтинг: 8,9</span>
+      </div>
+    </div>
+    <div class="result-content">
+      <div class="photo-hotel">
+        <a href="#"><img src="#" alt="photo-hotel" </a>
+      </div>
+      <h2>Villas at Poco Diablo</h2>
+      <div class="info-house">
+        <span class="type-house">Апартаменты</span>
+        <span class="result-cost">ОТ 4000 Р.</span>
+      </div>
+      <div class="additional-menu">
+        <a class="read-more" href="#">ПОДРОБНЕЕ</a>
+        <a class="reserve" href="#">ЗАБРОНИРОВАТЬ</a>
+      </div>
+      <div class="hotel-rating">
+        <img class="stars" src="#" />
+        <span class="rating">Рейтинг: 9,2</span>
+      </div>
+    </div>
+  </div>
+  <footer class="main-footer">
+    <div class="Hashtag">
+      <p>#visitSEDONA</p>
+    </div>
+    <div class="social-ico">
+      <ul>
+        <li>
+          <a href="tw-ico"></a>
+        </li>
+        <li>
+          <a href="fb-ico"></a>
+        </li>
+        <li>
+          <a href="ut-ico"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="academy-lable">
+      <img src="#" alt="html academy">
+    </div>
+  </footer>
   </div>
 </body>
 
