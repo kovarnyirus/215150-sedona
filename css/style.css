@@ -3,7 +3,7 @@ body{
   line-height: 26px;
   color: #333;
   font-weight: bold;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   text-transform:uppercase;
 }
 h2 {
@@ -11,6 +11,5 @@ h2 {
   line-height: 26px;
   color: #000;
   font-weight: bold;
-  font-family: 'PT Sans', sans-serif;
   text-transform:uppercase;
 }
