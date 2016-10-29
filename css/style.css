@@ -1,0 +1,16 @@
+body{
+  font-size: 14px;
+  line-height: 26px;
+  color: #333;
+  font-weight: bold;
+  font-family: 'PT Sans', sans-serif;
+  text-transform:uppercase;
+}
+h2 {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000;
+  font-weight: bold;
+  font-family: 'PT Sans', sans-serif;
+  text-transform:uppercase;
+}
