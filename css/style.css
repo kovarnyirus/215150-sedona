@@ -1,10 +1,12 @@
 body{
+  background-color: #f2f2f2;
   font-size: 14px;
   line-height: 26px;
   color: #333;
   font-weight: bold;
   font-family: 'PT Sans', 'Arial', sans-serif;
   text-transform:uppercase;
+
 }
 h2 {
   font-size: 21px;
@@ -12,4 +14,93 @@ h2 {
   color: #000;
   font-weight: bold;
   text-transform:uppercase;
+}
+.wrapper{
+  width: 1200px;
+  background-color:grey;
+  margin: 0 auto;
+}
+.content{
+  text-align: center;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.intro{
+  margin: 0 auto;
+  width: 500px;
+}
+.preface{
+  width: 580px;
+  margin: 0 auto;
+}
+.features{
+  float: left;
+  width: 340px;
+  background-color: red;
+}
+.left-column{
+  width: 400px;
+  float: left;
+  background-color: #81b3d2;
+}
+.right-column{
+  float: right;
+  background-color: #81b3d2;
+  width: 400px;
+}
+.reason-image{
+  float: left;
+}
+.reason{
+  float: left;
+  width: 250px;
+  margin-left: 95px;
+}
+.interested{
+  margin: 0 auto;
+}
+.search-hotel{
+  margin: 0 auto;
+  width: 570px;
+}
+.number-adults{
+  float: left;
+  width: 220px;
+}
+.children{
+  float: right;
+  width: 220px;
+}
+/*footer*/
+.Hashtag{
+  float: left;
+  width: 150px;
+}
+.social-ico{
+  float: left;
+  width: 166px;
+}
+.academy-lable{
+  float: right;
+  width: 200px;
+}
+/* catalog */
+.infrastructure{
+  float: left;
+}
+.filter-cost{
+  float: right;
+}
+.type-house{
+  float: left;
+}
+.photo-hotel{
+  float: left;
+}
+.hotel-rating{
+  float: right;
+  width: 100px;
 }
