@@ -134,23 +134,36 @@ h2 {
 
 .Hashtag{
   float: left;
-  width: 150px;
+  width: 400px;
+  text-align: center;
 }
 .social-ico{
   float: left;
-  width: 166px;
+  width: 400px;
 }
 .academy-lable{
   float: right;
-  width: 200px;
+  width: 400px;
 }
-
+.tw-ico{
+  display: block;
+  width:
+}
 
 /* catalog */
 
-
+.header-result{
+  padding-left: 73px;
+  padding-right: 73px;
+}
 .infrastructure{
   float: left;
+  width: 240px;
+
+}
+.filter{
+padding-left: 73px;
+padding-right: 73px;
 }
 .filter-cost{
   float: right;
@@ -160,8 +173,22 @@ h2 {
 }
 .photo-hotel{
   float: left;
+  padding-right: 30px;
 }
 .hotel-rating{
   float: right;
   width: 100px;
+}
+.result-content{
+  padding-left: 73px;
+  padding-right: 73px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 1px solid #e5e5e5;
+}
+.result-content h2{
+  margin-top: -5px;
+}
+.additional-menu a {
+  background-color: #81b3d2;
 }
