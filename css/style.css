@@ -137,6 +137,20 @@ h2 {
   width: 400px;
   text-align: center;
 }
+.social-ico a {
+  display: block;
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+
+
+}
+.social-ico .tw-ico{
+  width: 15px;
+  height: 13px;
+  background-image: url(../img/sprite-sedona.png);
+  background-position: 233px -25px
+}
 .social-ico{
   float: left;
   width: 400px;
