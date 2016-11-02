@@ -46,6 +46,30 @@ h2 {
 .content{
   text-align: center;
 }
+.main-navigation{
+  padding: 0 73px;
+}
+.main-navigation li{
+  float: left;
+  list-style: none;
+  width: 20%;
+  padding: 23px 0px;
+}
+.main-navigation li:nth-child(4){
+  float: right;
+  text-align: right;
+}
+.main-navigation li:nth-child(1){
+  margin-left: -41px;
+}
+.main-navigation li:nth-child(3){
+  float: right;
+  text-align: right;
+}
+a{
+  text-decoration: none;
+  color: #000
+}
 .intro{
   margin: 0 auto;
   width: 500px;
@@ -76,8 +100,29 @@ h2 {
   padding-right: 25px;
   margin-bottom: 50px;
 }
-features-block {
-
+.features-block .house-image{
+  display: block;
+  width: 74px;
+  height: 73px;
+  background-image: url(../img/sprite-sedona.png);
+  background-position: -8px -8px;
+  margin: 0 auto;
+}
+.features-block .foot-image{
+  display: block;
+  width: 74px;
+  height: 73px;
+  background-image: url(../img/sprite-sedona.png);
+  background-position: -7px -81px;
+  margin: 0 auto;
+}
+.features-block .souvenirs-image{
+  display: block;
+  width: 74px;
+  height: 76px;
+  background-image: url(../img/sprite-sedona.png);
+  background-position: -12px -154px;
+  margin: 0 auto;
 }
 .features-block{
   padding-top: 60px;
@@ -145,14 +190,37 @@ features-block {
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
-
-
+}
+.social-ico a:hover {
+  display: block;
+  width: 46px;
+  height: 48px;
+  background-color: #669ec0;
+}
+.social-ico li{
+  float: left;
+  list-style: none;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-bottom: 10px;
 }
 .social-ico .tw-ico{
-  width: 15px;
-  height: 13px;
+  width: 46px;
+  height: 48px;
   background-image: url(../img/sprite-sedona.png);
-  background-position: 233px -25px
+  background-position: 233px -7px
+}
+.social-ico .fb-ico{
+  width: 46px;
+  height: 48px;
+  background-image: url(../img/sprite-sedona.png);
+  background-position: -271px -7px
+}
+.social-ico .yt-ico{
+  width: 46px;
+  height: 48px;
+  background-image: url(../img/sprite-sedona.png);
+  background-position: -322px -7px
 }
 .social-ico{
   float: left;
@@ -160,11 +228,15 @@ features-block {
 }
 .academy-lable{
   float: right;
-  width: 400px;
+  width: 300px;
+  margin-left: 100px;
 }
-.tw-ico{
+.html-academy-lable{
+  width: 114px;
+  height: 40px;
+  background-image: url(../img/sprite-sedona.png);
+  background-position: -95px -10px;
   display: block;
-  width:
 }
 
 /* catalog */
