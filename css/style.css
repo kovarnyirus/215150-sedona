@@ -240,11 +240,36 @@ a{
   margin: 0 auto;
   padding-bottom: 46px;
 }
-.search-hotel{
 
+/*search hotels*/
+
+.search-hotels input[type="datetime"] {
+  width: 346px;
+}
+
+.search-hotel{
   margin: 0 auto;
   width: 568px;
+
 }
+.search-form{
+  position: absolute;
+  background-color: #fff;
+  width: 568px;
+}
+.arrive-in:after{
+  content: "";
+  position: absolute;
+  width: 77px;
+  height: 77px;
+  background-image: url(../img/sprite-sedona.png);
+  background-position: -3px -11px;
+}
+.departure::after{}
+
+
+
+
 .search-title{
   padding:30px 0;
   background-color: #766357;
@@ -277,8 +302,11 @@ a{
   margin: 0 auto;
 }
 
+
 /*footer*/
+
 .main-footer{
+  position: absolute;
   padding-top: 30px;
   padding-bottom: 36px;
 }
@@ -366,8 +394,15 @@ a{
 }
 .filter{
   text-align: left;
-padding-left: 73px;
-padding-right: 73px;
+  padding-left: 73px;
+  padding-right: 73px;
+}
+.filter{
+  display: block;
+  min-height: 194px;
+  padding-top: 23px;
+  padding-bottom: 20px;
+  background: url('../img/filter-background.png') no-repeat;
 }
 .filter-cost{
   float: right;
@@ -382,6 +417,12 @@ padding-right: 73px;
 .hotel-rating{
   float: right;
   width: 100px;
+}
+.result{
+  text-align: left;
+}
+.header-result{
+  display: inline-block;
 }
 .result-content{
   padding-left: 73px;
