@@ -510,24 +510,34 @@ a{
 lable{
   padding-top: 20px;
 }
-.filter input[type="checkbox"] {
+.filter-item input[type="checkbox"] {
   display: none;
 }
-.filter label{
+.filter-item label{
   padding-left: 20px;
   position: relative;
   cursor: pointer;
   font-family: FontAwesome;
 }
-.filter label:before {
+.filter-item label::before {
   content: "";
   position: absolute;
-  width: 20px;
-  height: 20px;
-  border: 2px solid #fff;
-  border-radius: 8px;
+  width: 22px;
+  height: 22px;
   margin-left: -30px;
+background-image: url('../img/checkbox.png');
 }
+
+.filter-item label:checked {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  margin-left: -30px;
+background-image: url('../img/checked.png');
+}
+
+
 
 .type-house{
   float: left;
