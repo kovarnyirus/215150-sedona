@@ -505,38 +505,51 @@ a{
 
 /*checkbox*/
 .filter-item{
-  padding-top:20px;
+  padding-top:25px;
 }
 lable{
   padding-top: 20px;
 }
-.filter-item input[type="checkbox"] {
+input[type="checkbox"]{
   display: none;
 }
 .filter-item label{
-  padding-left: 20px;
+  padding-left: 27px;
   position: relative;
   cursor: pointer;
   font-family: FontAwesome;
 }
-.filter-item label::before {
-  content: "";
-  position: absolute;
-  width: 22px;
-  height: 22px;
+input[type="checkbox"] + label span {
+  display:inline-block;
+  vertical-align:middle;
+  cursor:pointer;
+  width: 25px;
+  height: 25px;
   margin-left: -30px;
-background-image: url('../img/checkbox.png');
+  padding-left: 5px;
+  padding-bottom: 5px;
+  background: url('../img/checkbox.png') left top no-repeat;;
 }
 
-.filter-item label:checked {
+input[type="checkbox"]:checked + label span {
   content: "";
   position: absolute;
-  width: 22px;
-  height: 22px;
+  width: 25px;
+  height: 25px;
+  padding-left: 10px;
   margin-left: -30px;
 background-image: url('../img/checked.png');
-}
+cursor:pointer;
 
+}
+input[type="checkbox"]:checked{
+  margin-top: 5px;
+}
+.header-result h2 ,
+.sort, .sort-type{
+  display: inline-block;
+  vertical-align: top;
+}
 
 
 .type-house{
