@@ -306,7 +306,7 @@ a{
 /*footer*/
 
 .main-footer{
-  padding-top: 30px;
+  padding-top: 35px;
   padding-bottom: 36px;
 }
 .Hashtag{
@@ -386,22 +386,23 @@ a{
   padding-left: 72px;
   padding-right: 73px;
   padding-top: 2px;
-  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .infrastructure{
   float: left;
-  width: 240px;
+  width: 256px;
 
 }
 .filter{
   display: block;
   min-height: 192px;
-  padding-top: 25px;
+  padding-top: 27px;
   background: url('../img/filter-background.png') no-repeat;
   color: #fff;
   text-align: left;
-  padding-left: 72px;
+  padding-left: 71px;
   padding-right: 73px;
   font-size: 16px;
   line-height: 21px;
@@ -512,7 +513,7 @@ a{
 
 /*checkbox*/
 .filter-item{
-  padding-top:25px;
+  padding-top:23px;
 }
 lable{
   padding-top: 20px;
@@ -521,10 +522,11 @@ input[type="checkbox"]{
   display: none;
 }
 .filter-item label{
-  padding-left: 27px;
+  padding-left: 30px;
   position: relative;
   cursor: pointer;
   font-family: FontAwesome;
+  font-size: 14px;
 }
 input[type="checkbox"] + label span {
   display:inline-block;
@@ -533,9 +535,9 @@ input[type="checkbox"] + label span {
   width: 25px;
   height: 25px;
   margin-left: -30px;
-  padding-left: 5px;
+  padding-left: 15px;
   padding-bottom: 5px;
-  background: url('../img/checkbox.png') left top no-repeat;;
+  background: url('../img/checkbox.png') left top no-repeat;
 }
 
 input[type="checkbox"]:checked + label span {
@@ -615,10 +617,29 @@ input[type="checkbox"]:checked{
   padding-right: 30px;
 }
 .hotel-rating{
-  width: 95px;
+  width: 115px;
   font-weight: normal;
   float: right;
-  margin-bottom: -40px;
+}
+.rating-stars .star{
+  display: inline-block;
+  vertical-align:top;
+  width: 23px;
+  height: 17px;
+  background-image: url(../img/star.png);
+  background-repeat: no-repeat;
+  float: right;;
+}
+.rating-stars{
+  margin-top: -1px;
+  margin-bottom: 64px;
+}
+.rating{
+  display: block;
+  text-align: center;
+  width: 110px;
+  height: 27px;
+  background-color: #f2f2f2;
 }
 .result{
   text-align: left;
@@ -626,14 +647,18 @@ input[type="checkbox"]:checked{
 
 .result-content{
   padding-left: 72px;
-  padding-right: 73px;
+  padding-right: 66px;
   padding-top: 30px;
-  padding-bottom: 3px;
-  border-top: 1px solid #e5e5e5;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #e5e5e5;
 }
 .result-content h2{
   line-height: 26px;
   margin-top: -6px;
+}
+.result-left-column{
+  width: 900px;
+  float: left;
 }
 .type-apartment{
   display: inline-block;
