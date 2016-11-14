@@ -63,7 +63,6 @@ h3{
   box-shadow: 0 0 5px;
   width: 1200px;
   margin: 0 auto;
-  position: relative;
 }
 .main-header{
   position: relative;
@@ -253,6 +252,7 @@ a{
 }
 
 .search-hotel{
+  position: relative;
   margin: 0 auto;
   width: 568px;
 
@@ -263,6 +263,7 @@ a{
   width: 460px;
   padding-left: 54px;
   padding-right: 54px;
+  z-index: 5;
 }
 .arrive-in:after{
   content: "";
@@ -331,9 +332,9 @@ a{
 .number-adults input{
   border: none;
   background-color: #f2f2f2;
-  min-height: 33px;
+  min-height: 34px;
   text-align: center;
-  padding-bottom: 2px;
+  padding-bottom: 1px;
   padding-top: 4px;
 }
 .calendar:after{
@@ -360,6 +361,10 @@ a{
   padding-right: 18px;
   padding-bottom: 13px;
   padding-top: 14px;
+}
+.children button:hover,
+.number-adults button:hover{
+  background-color:#ebebeb;
 }
 .minus{
   display: block;
@@ -402,12 +407,16 @@ a{
 
 
 .main-footer{
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  min-height: 128px;
+}
+.footer-content{
   padding-top: 35px;
   padding-bottom: 36px;
-  background-color: #fff;
+  bottom: 0;
   width: 1200px;
+  position: absolute;
+  background-color: #fff;
   background-color: rgba(255, 255, 255, 0.9);
 }
 .Hashtag{
