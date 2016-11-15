@@ -151,7 +151,7 @@ a {
   padding-top: 56px;
 }
 
-.intro:after {
+.intro::after {
   content: "";
   width: 100%;
   height: 57px;
@@ -367,7 +367,7 @@ a {
   text-align: left;
   float: left;
   min-height: 38px;
-  width: 230px;
+  width: 231px;
   margin-bottom: 53px;
 }
 
@@ -398,7 +398,7 @@ a {
   background-color: #f2f2f2;
 }
 
-.calendar::after:hover {
+.calendar:hover::after {
   background-position: -9px -363px;
 }
 
@@ -415,24 +415,25 @@ a {
   padding-top: 14px;
 }
 
-.children button:hover, .number-adults button:hover {
+.children button:hover,
+.number-adults button:hover {
   background-color: #ebebeb;
 }
 
 .minus {
   display: block;
-  width: 12px;
+  width: 13px;
   height: 12px;
   background-image: url(../img/sprite-sedona.png);
-  background-position: -10px -657px;
+  background-position: -9px -656px;
 }
 
 .plus {
   display: block;
-  width: 15px;
+  width: 13px;
   height: 12px;
   background-image: url(../img/sprite-sedona.png);
-  background-position: -10px -630px;
+  background-position: -9px -630px;
 }
 
 .number-adults-title {
@@ -586,7 +587,7 @@ lable {
   display: block;
   min-height: 191px;
   padding-top: 27px;
-  background: url('../img/filter-background.png') no-repeat;
+  background: url('../img/filter-background.jpg') no-repeat;
   color: #fff;
   text-align: left;
   padding-left: 71px;
