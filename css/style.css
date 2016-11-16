@@ -399,6 +399,7 @@ a {
 }
 
 .number-adults {
+  padding-right: 3px;
   box-sizing: border-box;
   text-align: left;
   float: left;
@@ -410,6 +411,7 @@ a {
 
 
 .children {
+  padding-right: 3px;
   box-sizing: border-box;
   text-align: left;
   float: right;
@@ -420,66 +422,75 @@ a {
   padding-left: 48px;
 }
 
-.counter-form{
-  position: relative;
-  width: 38px
 
-}
 .children input, .number-adults input {
   border: none;
   background-color: #f2f2f2;
   min-height: 36px;
   text-align: center;
+  width: 38px;
 
 }
-.btn-minus::before{
+.btn-plus{
+  position: relative;
+  border: none;
+  width: 38px;
+  height: 38px;
+  float: right;;
+}
+.btn-minus{
+  position: relative;
+  border: none;
+  width: 38px;
+  height: 38px;
+  float: right;;
+}
+.children input{
+  float: right;
+}
+.number-adults input{
+  float: right;
+}
+.btn-minus::after{
   position: absolute;
   content: "";
-  width: 43px;
-  height: 39px;
-  top: -10px;
-  right: 50px;
   background-image: url(../img/sprite-sedona.png);
-  background-position: 2px -642px;
-  background-color: #f2f2f2;
+  background-position: 4px -642px;
+  top: 0px;
+  right: 0px;
+  width: 38px;
+  height: 38px;
 }
 .btn-plus::after{
   position: absolute;
   content: "";
-  width: 43px;
-  height: 39px;
-  top: -10px;
-  left: 50px;
   background-image: url(../img/sprite-sedona.png);
-  background-position: 9px -615px;
+  background-position: 3px -615px;
   background-color: #f2f2f2;
+  top: 0px;
+  right: 0px;
+  width: 38px;
+  height: 38px;
 }
-.btn-minus:hover::before{
-background-position: 2px -732px;
-background-color: #ebebeb;
-}
-.btn-minus{
-  border: none;
-  width: 18px;
-  height: 20px;
-}
-.btn-plus{
-  border: none;
-  width: 18px;
-  height: 20px;
-}
-.btn-plus:hover::after{
-background-position: 9px -705px;
+.btn-minus:hover::after{
+background-position: 4px -732px;
 background-color: #ebebeb;
 }
 
+
+.btn-plus:hover::after{
+background-position: 3px -705px;
+background-color: #ebebeb;
+}
 
 .number-adults-title {
-  margin-right:58px;
+  display: inline-block;
+  padding-top: 8px;
 }
 
 .children-title {
-  margin-right: 46px;
+  display: inline-block;
+  padding-top: 8px;
 }
 
 .button-search input {
