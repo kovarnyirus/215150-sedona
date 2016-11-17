@@ -313,6 +313,7 @@ a {
 }
 
 .search-form {
+  display: none;
   position: absolute;
   background-color: #fff;
   width: 460px;
@@ -320,7 +321,9 @@ a {
   padding-right: 54px;
   z-index: 5;
 }
-
+.search-form-show {
+  display: block;
+}
 .arrive-in:after {
   content: "";
   position: absolute;
@@ -474,13 +477,12 @@ a {
 }
 .btn-minus:hover::after{
 background-position: 4px -732px;
-background-color: #ebebeb;
 }
-
+.btn-minus:active::after
 
 .btn-plus:hover::after{
 background-position: 3px -705px;
-background-color: #ebebeb;
+
 }
 
 .number-adults-title {
