@@ -371,6 +371,7 @@ a {
 
 .date-arrive input:hover, .date-departure input:hover {
   background-color: #ebebeb;
+  outline-style: none;
 }
 
 .date-departure input {
@@ -463,6 +464,7 @@ a {
   right: 0px;
   width: 38px;
   height: 38px;
+  background-color: #f2f2f2;
 }
 .btn-plus::after{
   position: absolute;
@@ -478,11 +480,15 @@ a {
 .btn-minus:hover::after{
 background-position: 4px -732px;
 }
-.btn-minus:active::after
+.btn-minus:active::after{
+  background-position: 4px -822px;
+}
 
 .btn-plus:hover::after{
 background-position: 3px -705px;
-
+}
+.btn-plus:active::after{
+background-position: 3px -795px;
 }
 
 .number-adults-title {
