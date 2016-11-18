@@ -375,7 +375,6 @@ a {
   text-transform: uppercase;
   padding-left: 14px;
   z-index: 24;
-  outline-style: none;
 }
 
 .date-arrive input:hover, .date-departure input:hover {
@@ -392,7 +391,6 @@ a {
   padding-left: 12px;
   text-transform: uppercase;
   z-index: 80;
-  outline-style: none;
 }
 .calendar::before{
   cursor: pointer;
