@@ -100,12 +100,12 @@
           <form class="search-form" action="/echo" method="post">
             <div class="date-arrive">
               <label for="arrive-in">Дата заезда:</label>
-              <input class="arrive-in" type="datetime" id="arrive-in" placeholder="24 Апреля 2016" value="">
+              <input class="arrive-in" type="datetime" id="arrive-in" placeholder="24 Апреля 2016" value="" required="">
               <span class="calendar"></span>
             </div>
             <div class="date-departure">
               <label for="departure">Дата выезда:</label>
-              <input class="departure" type="datetime" id="departure" placeholder="4 июля 2016" value="">
+              <input class="departure" type="datetime" id="departure" placeholder="4 июля 2016" value=""required="">
               <span class="calendar"></span>
             </div>
             <div class="number-adults">
@@ -128,8 +128,8 @@
       </div>
     </div>
     <footer class="main-footer clearfix">
-      <div class="map">
-        <img src="img\map.jpg" width="1200" height="593" alt="map">
+      <div id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.135657770115!2d-111.8301578372046!3d34.854443815239634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1479471134986" width="1200" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
       <div class="footer-content">
         <div class="Hashtag">
@@ -156,7 +156,7 @@
     </footer>
   </div>
   <script>
-    var click = document.querySelector(".search-hotel");
+    var click = document.querySelector(".search-title");
     var popup = document.querySelector(".search-form");
     click.addEventListener("click", function(event) {
         event.preventDefault();

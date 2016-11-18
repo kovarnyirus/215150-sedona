@@ -321,8 +321,16 @@ a {
   padding-right: 54px;
   z-index: 5;
 }
+@keyframes emergence {
+  0% { transform: translateY(2000px);}
+  70% { transform: translateY(90px);}
+  80% { transform: translateY(60px);}
+  90% { transform: translateY(30px);}
+  100% { transform: translateY(0);}
+}
 .search-form-show {
   display: block;
+  animation: emergence 0.4s;
 }
 .arrive-in:after {
   content: "";
@@ -359,14 +367,15 @@ a {
 }
 
 .date-arrive input {
-
   margin-left: 21px;
   border: none;
   min-height: 36px;
   background-color: #f2f2f2;
-  width: 300px;
+  width: 292px;
   text-transform: uppercase;
   padding-left: 14px;
+  z-index: 24;
+  outline-style: none;
 }
 
 .date-arrive input:hover, .date-departure input:hover {
@@ -379,27 +388,29 @@ a {
   border: none;
   min-height: 36px;
   background-color: #f2f2f2;
-  width: 300px;
+  width: 293px;
   padding-left: 12px;
   text-transform: uppercase;
+  z-index: 80;
+  outline-style: none;
 }
 .calendar::before{
   cursor: pointer;
   content: "";
-  width: 32px;
+  width: 38px;
   height: 38px;
   position: absolute;
   background-image: url(../img/sprite-sedona.png);
-  background-position: -9px -279px;
+  background-position: -3px -279px;
   background-color: #f2f2f2;
   bottom: 29px;
   right: 3px;
 }
 .calendar:hover::before{
-  background-position: -9px -363px;
+  background-position: -3px -363px;
 }
 .calendar:active::before{
-  background-position: -9px -321px;
+  background-position: -3px -321px;
 }
 
 .number-adults {
