@@ -15,6 +15,9 @@ body {
   clear: both;
 }
 
+img {
+  max-width: 100%;height: auto;
+}
 
 /* шрифты */
 
@@ -143,6 +146,8 @@ a {
   padding-top: 76px;
   margin-bottom: 59px;
   position: relative;
+  background-color: #f4e9e9;
+  color: #000;
 }
 
 .intro img {
@@ -200,6 +205,8 @@ a {
 }
 
 .reason-image {
+  background-color: #fff;
+  color: #000;
   height: 256px;
   margin: 0;
   padding: 0;
@@ -213,41 +220,46 @@ a {
 }
 
 .features {
+  position: relative;
   width: 300px;
   float: left;
   padding-left: 50px;
   padding-right: 50px;
   margin-bottom: 48px;
+  padding-top: 85px;
 }
 
-.features-block .house-image {
-  display: block;
+.house-image::after {
+  content: "";
+  position: absolute;
   width: 77px;
   height: 77px;
   background-image: url(../img/sprite-sedona.png);
   background-position: -9px -193px;
-  margin: 0 auto;
-  margin-bottom: 26px;
+  top: 0;
+  left: 159px;
 }
 
-.features-block .foot-image {
-  display: block;
+.foot-image::after {
+  content: "";
+  position: absolute;
   width: 77px;
   height: 77px;
   background-image: url(../img/sprite-sedona.png);
   background-position: -8px -102px;
-  margin: 0 auto;
-  margin-bottom: 26px;
+  top: 0;
+  left: 159px;
 }
 
-.features-block .souvenirs-image {
-  display: block;
+.souvenirs-image::after {
+  content: "";
+  position: absolute;
   width: 77px;
   height: 77px;
   background-image: url(../img/sprite-sedona.png);
   background-position: -3px -11px;
-  margin: 0 auto;
-  margin-bottom: 26px;
+  top: 0;
+  left: 159px;
 }
 
 .features-block {
@@ -454,7 +466,8 @@ input[type=text]:focus{
   background-color: #fff;
   box-shadow: 0 0 0 2px #e5e5e5;
   margin-bottom: 2px;
-  margin-top:2px;
+  margin-top: 2px;
+  min-height: 32px;
 }
 
 input[type=date]:focus{
@@ -556,7 +569,11 @@ background-position: 3px -795px;
   color: #88b6d1;
 }
 
-
+.map{
+  background-image:url(../img/map.jpg);
+  background-color: #fff;
+color: #000;
+}
 /*footer*/
 
 .main-footer {
@@ -565,7 +582,7 @@ background-position: 3px -795px;
 }
 
 .footer-content {
-  padding-top: 35px;
+  padding-top: 36px;
   padding-bottom: 36px;
   bottom: 0;
   width: 1200px;
@@ -705,6 +722,8 @@ background-position: 3px -795px;
   line-height: 21px;
   font-weight: bold;
   margin-bottom: 12px;
+  background-color:#000;
+  color: #fff;
 }
 
 .filter label {
@@ -865,6 +884,33 @@ input[type="checkbox"]:checked+label span {
   cursor: pointer;
   padding-left: 15px;
 }
+input[type="checkbox"]:disabled+label span {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  margin-left: -30px;
+  padding-left: 15px;
+  background: url(../img/checkbox.png) left top no-repeat;
+  position: absolute;
+  margin-left: -42px;
+  opacity: 0.5;
+}
+
+input[type="checkbox"]:checked:disabled+label span {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  margin-left: -42px;
+  background: url(../img/checked.png)left top no-repeat;
+  cursor: pointer;
+  padding-left: 15px;
+  opacity: 0.5;
+}
+
+
 
 
 /*строка сортировки найденого*/
@@ -894,7 +940,7 @@ input[type="checkbox"]:checked+label span {
 .sort-type a {
   margin-left: 30px;
   color: #c6c6c6;
-  border-bottom: 1px dashed #81b3d2;
+  border-bottom: 1px dotted #81b3d2;
 }
 .sort-type a:hover{
   color: #81b3d2;
@@ -945,6 +991,11 @@ input[type="checkbox"]:checked+label span {
   background-position: -5px -537px;
 }
 .sort-arrow-down:active{
+  background-position: -5px -411px;
+}
+
+.sort-arrow-active{
+  background-image: url(../img/sprite-sedona.png);
   background-position: -5px -411px;
 }
 .type-house {
