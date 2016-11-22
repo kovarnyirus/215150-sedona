@@ -39,11 +39,9 @@ h3 {
   font-weight: bold;
 }
 
-.main-reason-title {
-  font-size: 21px;
-  line-height: 21px;
+.main-reason h2 {
+  padding: 4px 124px 3px 125px;
   color: #fff;
-  font-weight: bold;
 }
 
 .main-reason-number {
@@ -181,7 +179,7 @@ a {
 }
 
 .explanation-reasons {
-  padding-top: 6px;
+  padding-top: 7px;
   font-weight: normal;
   line-height: 21px;
 }
@@ -271,6 +269,9 @@ a {
   padding-left: 40px;
   padding-right: 40px;
 }
+.reason h2{
+  padding:0 100px;
+}
 
 .reasons-block {
   padding-top: 30px;
@@ -321,18 +322,25 @@ a {
   padding-right: 54px;
   z-index: 5;
 }
+@-webkit-keyframes emergence {
+  0% { -webkit-transform: translateY(2000px); transform: translateY(2000px);}
+  70% { -webkit-transform: translateY(90px); transform: translateY(90px);}
+  80% { -webkit-transform: translateY(60px); transform: translateY(60px);}
+  90% { -webkit-transform: translateY(30px); transform: translateY(30px);}
+  100% { -webkit-transform: translateY(0); transform: translateY(0);}
+}
 @keyframes emergence {
-  0% { transform: translateY(2000px);}
-  70% { transform: translateY(90px);}
-  80% { transform: translateY(60px);}
-  90% { transform: translateY(30px);}
-  100% { transform: translateY(0);}
+  0% { -webkit-transform: translateY(2000px); transform: translateY(2000px);}
+  70% { -webkit-transform: translateY(90px); transform: translateY(90px);}
+  80% { -webkit-transform: translateY(60px); transform: translateY(60px);}
+  90% { -webkit-transform: translateY(30px); transform: translateY(30px);}
+  100% { -webkit-transform: translateY(0); transform: translateY(0);}
 }
 .search-form-show {
   display: block;
   animation: emergence 0.4s;
 }
-.arrive-in:after {
+.arrive-in::after {
   content: "";
   position: absolute;
   width: 77px;
@@ -422,7 +430,6 @@ a {
   position: relative;
 }
 
-
 .children {
   padding-right: 3px;
   box-sizing: border-box;
@@ -435,15 +442,29 @@ a {
   padding-left: 48px;
 }
 
-
 .children input, .number-adults input {
   border: none;
   background-color: #f2f2f2;
   min-height: 36px;
   text-align: center;
   width: 38px;
-
 }
+
+input[type=text]:focus{
+  background-color: #fff;
+  box-shadow: 0 0 0 2px #e5e5e5;
+  margin-bottom: 2px;
+  margin-top:2px;
+}
+
+input[type=date]:focus{
+  background-color: #fff;
+  box-shadow: 0 0 0 2px #e5e5e5;
+  min-height: 32px;
+  margin-bottom: 2px;
+  margin-top:2px;
+}
+
 .btn-plus{
   position: relative;
   border: none;
@@ -475,6 +496,7 @@ a {
   height: 38px;
   background-color: #f2f2f2;
 }
+
 .btn-plus::after{
   position: absolute;
   content: "";
@@ -486,9 +508,11 @@ a {
   width: 38px;
   height: 38px;
 }
+
 .btn-minus:hover::after{
 background-position: 4px -732px;
 }
+
 .btn-minus:active::after{
   background-position: 4px -822px;
 }
@@ -496,6 +520,7 @@ background-position: 4px -732px;
 .btn-plus:hover::after{
 background-position: 3px -705px;
 }
+
 .btn-plus:active::after{
 background-position: 3px -795px;
 }
@@ -503,11 +528,13 @@ background-position: 3px -795px;
 .number-adults-title {
   display: inline-block;
   padding-top: 8px;
+  vertical-align:top;
 }
 
 .children-title {
   display: inline-block;
   padding-top: 8px;
+  vertical-align:top;
 }
 
 .button-search input {
@@ -617,37 +644,36 @@ background-position: 3px -795px;
   margin: 0;
   padding-left: 121px;
 }
-
-.copyright {
-  display: inline-block;
-  vertical-align: bottom;
-  padding-right: 2px;
-  min-height: 40px;
-}
-
-lable {
-  padding-top: 20px;
-}
-
 .academy-lable {
+  position: relative;
   float: right;
   width: 199px;
   padding-top: 1px;
   padding-right: 101px;
 }
-
-.html-academy-lable {
+.copyright::after{
+  content: "";
+  position: absolute;
   width: 114px;
   height: 43px;
   background-image: url(../img/sprite-sedona.png);
   background-position: -8px -860px;
+  top: 1px;
+  right: 104px;
+}
+.copyright {
+  font-weight: normal;
+  padding-top:8px;
+  padding-right: 121px;
   display: inline-block;
+  vertical-align: bottom;
+  min-height: 40px;
 }
 
-.html-academy-lable:hover {
+.copyright:hover::after {
   background-position: -8px -919px;
 }
-.html-academy-lable:active{
+.copyright:active::after{
   background-position: -8px -978px;
 }
 
@@ -824,7 +850,7 @@ input[type="checkbox"]+label span {
   height: 25px;
   margin-left: -30px;
   padding-left: 15px;
-  background: url('../img/checkbox.png') left top no-repeat;
+  background: url(../img/checkbox.png) left top no-repeat;
   position: absolute;
   margin-left: -42px;
 }
@@ -989,6 +1015,9 @@ input[type="checkbox"]:checked+label span {
   width: 900px;
   float: left;
 }
+.result-left-column h2{
+margin-left: 165px;
+}
 
 .type-apartment {
   display: inline-block;
@@ -1008,6 +1037,7 @@ input[type="checkbox"]:checked+label span {
   padding-bottom: 15px;
   line-height: 21px;
   font-weight: normal;
+  margin-left: 165px;
 }
 
 .read-more {
@@ -1032,6 +1062,10 @@ input[type="checkbox"]:checked+label span {
 .additional-menu a {
   color: #fff;
   line-height: 21px;
+}
+
+.additional-menu{
+  margin-left: 165px;
 }
 
 .reserve {
