@@ -988,16 +988,12 @@ input[type="checkbox"]:checked:disabled+label span {
 }
 
 .sort-arrow-down:hover {
-  background-position: -5px -537px;
+  background-position: -5px -411px;
 }
 .sort-arrow-down:active{
   background-position: -5px -411px;
 }
 
-.sort-arrow-active{
-  background-image: url(../img/sprite-sedona.png);
-  background-position: -5px -411px;
-}
 .type-house {
   float: left;
 }
