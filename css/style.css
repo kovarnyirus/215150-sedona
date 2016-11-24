@@ -150,6 +150,8 @@ a {
   position: relative;
   background-color: #f4e9e9;
   color: #000;
+  width: 1200px;
+  height: 508px;
 }
 
 .intro img {
